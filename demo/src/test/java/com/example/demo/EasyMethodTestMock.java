@@ -10,6 +10,9 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+
 @RunWith(MockitoJUnitRunner.class)
 public class EasyMethodTestMock {
 
@@ -26,6 +29,11 @@ public class EasyMethodTestMock {
         Mockito.when(easyDao.getRainingRate(Mockito.anyString())).thenReturn(30);
 
         Assert.assertEquals(true, easyMethod.isGoodWeather());
+
+        verify(easyDao,times(1)).getLocalPlace();
+        verify(easyDao,times(0)).getRainingRate("Keelung");
+        verify(easyDao,times(1)).getRainingRate("Kaohsiung");
+
     }
 
 }

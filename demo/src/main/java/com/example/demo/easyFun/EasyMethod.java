@@ -1,13 +1,11 @@
 package com.example.demo.easyFun;
 
 import com.example.demo.easyDao.EasyDao;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
-@Service
+@Repository
 public class EasyMethod {
 
-    @Autowired
     private EasyDao easyDao;
 
     private int baseNumber = 5;
