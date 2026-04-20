@@ -21,3 +21,4 @@ public class EasyDao {
         return rainingRate;
     }
 }
+        else if (place.equals("Taipei")) {\n            return 60;\n        }
