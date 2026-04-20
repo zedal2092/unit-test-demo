@@ -1,1 +1,1 @@
-package com.example.demo.easyDao;\n\npublic class EasyDao {\n    public static void getRainingRate() {\n        System.out.println("Taipei rainingRate: 60");\n    }\n}\n
+package com.example.demo.easyDao;\n\npublic class EasyDao {\n    public int getRainingRate(String place) {\n        if (place.equals("Tokyo")) {\n            return 45;\n        } else if (place.equals("Taipei")) {\n            return 60;\n        }\n        return 0;\n    }\n}\n
