@@ -8,6 +8,9 @@ public class EasyDao {
     public String getLocalPlace() {
         //抓取當地位址
         return "Keelung";
+        else if ("Taipei".equals(place)) {
+            rainingRate = 60;
+        }
     }
 
     public int getRainingRate(String place) {
@@ -16,6 +19,9 @@ public class EasyDao {
         if ("Kaohsiung".equals(place)){
             rainingRate = 30;
         } else if ("Keelung".equals(place)){
+        else if ("Taipei".equals(place)) {
+            rainingRate = 60;
+        }
             rainingRate = 70;
         }
         return rainingRate;
