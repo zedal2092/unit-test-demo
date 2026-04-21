@@ -9,7 +9,6 @@ public class EasyDao {
         //抓取當地位址
         return "Keelung";
         else if ("Taipei".equals(place)) {
-\n
             rainingRate = 60;
         }
     }
@@ -21,7 +20,6 @@ public class EasyDao {
             rainingRate = 30;
         } else if ("Keelung".equals(place)){
         else if ("Taipei".equals(place)) {
-            rainingRate = 60;
         }
             rainingRate = 70;
         }
